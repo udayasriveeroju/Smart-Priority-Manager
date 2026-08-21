@@ -87,5 +87,4 @@ Then open the localhost link in your browser.
 * Improve AI suggestions
 
 ## Author
-
-**Your Name**
+Udayasri
