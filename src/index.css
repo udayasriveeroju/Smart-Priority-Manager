@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply antialiased font-sans text-slate-800 dark:text-slate-100 bg-[#080808];
+  }
+  
+  /* Font Family Overrides */
+  .font-editorial-serif {
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  }
+  .font-editorial-display {
+    font-family: 'Syne', 'Plus Jakarta Sans', sans-serif;
+  }
+  .font-editorial-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Editorial Mesh Pattern Background */
+.editorial-mesh-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.editorial-mesh-pattern-light {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Editorial Gradient Text */
+.editorial-gradient-text {
+  background: linear-gradient(135deg, #F43F5E 0%, #6366F1 50%, #22D3EE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.editorial-gradient-rose-cyan {
+  background: linear-gradient(90deg, #FB7185 0%, #818CF8 60%, #38BDF8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Editorial Hairline Border */
+.editorial-hairline {
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.editorial-hairline-subtle {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Custom Smooth Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(244, 63, 94, 0.4);
+}
+
+/* Selection highlight */
+::selection {
+  background: rgba(244, 63, 94, 0.35);
+  color: #FFFFFF;
+}
